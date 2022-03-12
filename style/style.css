@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: rgba(184, 197, 247, 0.563);
+}
+
+.darkMode {
+    background-color: black;
+}
+
+.darkMode h2 {
+    color: white;
+}
+
+#FutbolID {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.Basquet {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.NBA {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo-principal {
+    text-align: center;
+    color: white;
+}
+
+.subtitulo {
+    text-align: center;
+    color: black;
+}
+
+.footer {
+    text-align: center;
+    color: white;
+}
+
+.contenedor__card {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+.enStock {
+    text-align: center;
+    color: white;
+    background-color: green;
+}
+
+.sinStock {
+    text-align: center;
+    color: white;
+    background-color: red;
+}
+
+.ocultar {
+    display: none;
+}
+
+.card {
+    backdrop-filter: blur(15px) saturate(105%);
+    -webkit-backdrop-filter: blur(15px) saturate(105%);
+    background-color: rgba(245, 245, 245, 0.6);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    margin: 20px;
+    width: 18rem;
+}
+
+.card-body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.card-title {
+    text-align: center;
+    color: #196cc4;
+}
