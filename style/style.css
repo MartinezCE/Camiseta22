@@ -50,6 +50,10 @@ section {
     color: white;
 }
 
+.darkMode .footer {
+    color: white;
+}
+
 #FutbolID {
     display: flex;
     flex-direction: row;
@@ -93,7 +97,7 @@ section {
 
 .footer {
     text-align: center;
-    color: white;
+    color: black;
 }
 
 .contenedor__card {
@@ -141,6 +145,11 @@ section {
     text-align: center;
     color: #196cc4;
 }
+
+
+/* 
+            Boton para cambiar el color de la pagina 
+                                                            */
 
 :root {
     /* --color-green: #00a878;
