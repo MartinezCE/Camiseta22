@@ -59,19 +59,26 @@ class Producto {
 
 }
 
-let colorFondoOscuro = document.querySelector("#dark");
-let body = document.querySelector("body");
-colorFondoOscuro.addEventListener("click", e => {
 
+
+const colorFondoOscuro = document.querySelector("#dark");
+const body = document.querySelector("body");
+
+getStorage()
+
+colorFondoOscuro.addEventListener('click', e => {
     body.classList.toggle('darkMode');
     setSorage(body.classList.contains('darkMode'))
 })
 
+
+
 function getStorage() {
     const modoOscuro = localStorage.getItem('darkMode');
-    if (!darkMode) {
+
+    if (!modoOscuro) {
         setSorage('false')
-    } else if (darkMode == 'true') {
+    } else if (modoOscuro == 'true') {
         body.classList.add('darkMode')
     }
 
@@ -80,6 +87,8 @@ function getStorage() {
 function setSorage(value) {
     localStorage.setItem('darkMode', value)
 }
+
+
 
 
 
