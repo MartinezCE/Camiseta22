@@ -6,6 +6,10 @@
 }
 
 .navbar {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
     background: rgb(41, 56, 96);
     background: -moz-linear-gradient(90deg, rgba(41, 56, 96, 1) 0%, rgba(33, 107, 166, 0.6699054621848739) 100%, rgba(0, 212, 255, 1) 100%);
     background: -webkit-linear-gradient(90deg, rgba(41, 56, 96, 1) 0%, rgba(33, 107, 166, 0.6699054621848739) 100%, rgba(0, 212, 255, 1) 100%);
