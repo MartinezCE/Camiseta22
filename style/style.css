@@ -18,11 +18,12 @@
 }
 
 body {
-    background-color: white;
+    background-color: black;
+    background-image: url("");
 }
 
 section {
-    background-image: url("../img/background-blanco-removebg.png");
+    background-color: white;
 }
 
 .navbar-nav .dropdown-menu {
@@ -42,17 +43,30 @@ section {
     filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#293860", endColorstr="#00d4ff", GradientType=1);
 }
 
-.darkMode {
-    background-color: black;
-}
 
-.darkMode h2 {
-    color: white;
+/* 
+                          MODO OSCURO  INICIO
+                                                                                              */
+
+.darkMode .subtitulo {
+    background-color: white;
+    color: black;
+    text-shadow: 3px 5px 2px #f5f1f1;
 }
 
 .darkMode .footer {
-    color: white;
+    color: black;
+    background-color: white;
 }
+
+.darkMode section {
+    background-color: #000;
+}
+
+
+/* 
+                          MODO OSCURO  FIN
+                                                                                              */
 
 #FutbolID {
     display: flex;
@@ -81,23 +95,52 @@ section {
     align-items: center;
 }
 
+.eastern-titulo {
+    background-image: url("../img/Eastern.png");
+    background-image: no-repeat;
+    background-image: fixed;
+    background-image: center;
+    background-size: cover;
+    margin-bottom: 0%;
+    padding-bottom: 3%;
+    padding-top: 1%;
+}
+
+.western-titulo {
+    background-image: url("../img/Western.png");
+    /* background-image: no-repeat;
+    background-image: fixed; */
+    background-image: center;
+    background-size: cover;
+    margin-bottom: 0%;
+    padding-bottom: 3%;
+    padding-top: 1%;
+}
+
 .titulo-principal {
     text-align: center;
-    color: white;
+    color: #FFFFFF;
+    text-shadow: 3px 5px 2px #474747;
     font-size: xx-large;
     font-weight: bold;
 }
 
 .subtitulo {
+    background-color: #000;
     text-align: center;
-    color: black;
+    color: #FFFFFF;
+    text-shadow: 3px 5px 2px #474747;
     font-size: xx-large;
     font-weight: bold;
 }
 
 .footer {
+    background-color: #000;
     text-align: center;
-    color: black;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-shadow: 3px 5px 2px #474747;
+    background-image: url("../img/background-blanco-removebg.png")
 }
 
 .contenedor__card {
@@ -147,8 +190,8 @@ section {
 }
 
 
-/* 
-            Boton para cambiar el color de la pagina 
+/*
+            Boton para cambiar el color de la pagina
                                                             */
 
 :root {
