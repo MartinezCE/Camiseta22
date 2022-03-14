@@ -14,8 +14,6 @@ function comprar(valor) {
     pagarTotal = pagarTotal + valor;
 }
 
-
-
 // Agrego en formato JSON
 const tabla = document.querySelector('#carrito')
 
