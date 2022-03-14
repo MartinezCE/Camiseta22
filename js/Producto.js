@@ -1,4 +1,5 @@
-import { pintarSinStock, pintarSinStockConID } from "./dom.js"
+import { pintarSinStockConID } from "./dom.js"
+
 
 
 export class Producto {
@@ -9,6 +10,8 @@ export class Producto {
         this.modelo = modelo;
         this.cantidad = cantidad;
         this.talle = talle;
+
+
     }
 
     crearLista(camisetaID, camisetaNombre) {
@@ -26,7 +29,7 @@ export class Producto {
                 icon: 'error',
                 title: 'NO HAY MAS STOCK'
             })
-            pintarSinStock(id);
+            pintarSinStockConID(id);
         }
     }
 
