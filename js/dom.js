@@ -8,6 +8,16 @@ export const pintarSinStock = () => {
     }
 }
 
+// const pintarGenerico = (clase, nuevaClase, nuevoId,textoInnerHtml) => {
+//     let divs = document.querySelectorAll(".${clase}");
+//     let contador = 1;
+//     for (const div of divs) {
+//         div.id = `${contador++}`
+//         div.innerHTML = `${textoInnerHtml}`;
+//         div.className += " ${nuevaClase}";
+//     }
+// }
+
 export const pintarEnStock = (camisetas) => {
     for (const camiseta of camisetas) {
         let elementoContenedor = document.getElementById(camiseta.id);

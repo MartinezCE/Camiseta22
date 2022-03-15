@@ -1,5 +1,5 @@
 // BOTON DARK / LIGTH
-// INICIO                                                   
+// INICIO
 
 const colorFondoOscuro = document.querySelector("#dark");
 const body = document.querySelector("body");

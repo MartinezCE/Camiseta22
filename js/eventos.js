@@ -12,10 +12,7 @@ const comprar = (valor) => {
 }
 
 let boton1 = document.querySelector("#btn1");
-boton1.addEventListener("click", respuestaClick1);
-
-
-function respuestaClick1() {
+boton1.addEventListener("click", respuestaClick1 = () => {
 
 
     if (camisetas[0].cantidad > 0) {
@@ -23,7 +20,6 @@ function respuestaClick1() {
         camisetas[0].sacarDelStock(camisetas[0].id, camisetas[0].precio);
         camisetas[0].crearLista(camisetas[0].id, camisetas[0].modelo);
 
-        console.log(camisetas[0].cantidad)
 
         Toast.fire({
             icon: 'success',
@@ -38,36 +34,36 @@ function respuestaClick1() {
         pintarSinStockConID(camisetas[0].id);
     }
 
-}
+})
 
 
 
 let boton2 = document.getElementById("btn2");
-boton2.addEventListener("click", respuestaClick2);
-
-function respuestaClick2() {
+boton2.addEventListener("click", respuestaClick2 = () => {
     if (camisetas[1].cantidad > 0) {
         comprar(camisetas[1].precio);
         camisetas[1].sacarDelStock(camisetas[1].id, camisetas[1].precio);
         camisetas[1].crearLista(camisetas[1].id, camisetas[1].modelo);
+
+
+        console.log(camisetas[1].cantidad)
+
         Toast.fire({
             icon: 'success',
             title: 'Producto agregado al carrito'
         })
-    } else {
+    } else if (camisetas[1].cantidad == 0) {
         Toast.fire({
-            icon: 'success',
-            title: 'Producto agregado al carrito'
+            icon: 'error',
+            title: 'NO HAY MAS STOCK'
         })
         pintarSinStockConID(camisetas[1].id);
     }
-}
+})
 
 
 let boton3 = document.getElementById("btn3");
-boton3.addEventListener("click", respuestaClick3);
-
-function respuestaClick3() {
+boton3.addEventListener("click", respuestaClick3 = () => {
     if (camisetas[2].cantidad > 0) {
         comprar(camisetas[2].precio);
         camisetas[2].sacarDelStock(camisetas[2].id, camisetas[2].precio);
@@ -79,9 +75,9 @@ function respuestaClick3() {
         })
     } else {
         Toast.fire({
-            icon: 'success',
-            title: 'Producto agregado al carrito'
+            icon: 'error',
+            title: 'NO HAY MAS STOCK'
         })
         pintarSinStockConID(camisetas[2].id);
     }
-}
+})
