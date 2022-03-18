@@ -1,0 +1,215 @@
+[{
+        "id": 1,
+        "precio": 15000,
+        "modelo": "Atlanta Hawks - Young",
+        "talle": ["s", "m", "l", "xl"],
+        "cantidad": [2, 4, 2, 1]
+    },
+    {
+        "id": 2,
+        "precio": 10000,
+        "modelo": "Boston Celtics - Tatum",
+        "talle": ["s", "m", "l", "xl"],
+        "cantidad": [0, 2, 1, 1]
+    },
+    {
+        "id": 3,
+        "precio": 10022,
+        "modelo": "Brooklyn Nets - Irving",
+        "talle": ["s", "m", "l", "xl"],
+        "cantidad": [0, 2, 0, 2]
+
+    },
+    {
+        "id": 4,
+        "precio": 10300,
+        "modelo": "Charlotte Hornets - Lebron",
+        "talle": ["s", "m", "l", "xl"],
+        "cantidad": [0, 2, 1, 1]
+    },
+    {
+        "id": 5,
+        "precio": 10300,
+        "modelo": "Chicago Bulls - Lebron",
+        "talle": ["s", "m", "l", "xl"],
+        "cantidad": [0, 2, 1, 1]
+    },
+    {
+        "id": 6,
+        "precio": 10300,
+        "modelo": "Cleveland Cavaliers - Lebron",
+        "talle": ["s", "m", "l", "xl"],
+        "cantidad": [0, 2, 1, 1]
+    },
+    {
+        "id": 7,
+        "precio": 10300,
+        "modelo": "Detroit Pistons - Lebron",
+        "talle": ["s", "m", "l", "xl"],
+        "cantidad": [0, 2, 1, 1]
+    },
+    {
+        "id": 8,
+        "precio": 14000,
+        "modelo": "Indiana Pacers - Lebron",
+        "talle": ["s", "m", "l", "xl"],
+        "cantidad": [0, 2, 1, 1]
+    },
+    {
+        "id": 9,
+        "precio": 12000,
+        "modelo": "Miami Heat - Lebron",
+        "talle": ["s", "m", "l", "xl"],
+        "cantidad": [0, 2, 1, 1]
+    },
+    {
+        "id": 10,
+        "precio": 11000,
+        "modelo": "Milwaukee Bucks - Lebron",
+        "talle": ["s", "m", "l", "xl"],
+        "cantidad": [0, 2, 1, 1]
+    },
+    {
+        "id": 11,
+        "precio": 10000,
+        "modelo": "New York Knicks - Lebron",
+        "talle": ["s", "m", "l", "xl"],
+        "cantidad": [0, 2, 1, 1]
+    },
+    {
+        "id": 12,
+        "precio": 11300,
+        "modelo": "Orlando Magic - Lebron",
+        "talle": ["s", "m", "l", "xl"],
+        "cantidad": [0, 2, 1, 1]
+    },
+    {
+        "id": 13,
+        "precio": 12300,
+        "modelo": "Philadelphia 76ers - Lebron",
+        "talle": ["s", "m", "l", "xl"],
+        "cantidad": [0, 2, 1, 1]
+    },
+    {
+        "id": 14,
+        "precio": 14300,
+        "modelo": "Toronto Raptors - Lebron",
+        "talle": ["s", "m", "l", "xl"],
+        "cantidad": [0, 2, 1, 1]
+    },
+    {
+        "id": 15,
+        "precio": 13300,
+        "modelo": "Washington Wizards - Lebron",
+        "talle": ["s", "m", "l", "xl"],
+        "cantidad": [0, 2, 1, 1]
+    },
+    {
+        "id": 16,
+        "precio": 11300,
+        "modelo": "Dallas Mavericks - Lebron",
+        "talle": ["s", "m", "l", "xl"],
+        "cantidad": [0, 2, 1, 1]
+    },
+    {
+        "id": 17,
+        "precio": 11300,
+        "modelo": "Denver Nuggets - Lebron",
+        "talle": ["s", "m", "l", "xl"],
+        "cantidad": [0, 2, 1, 1]
+    },
+    {
+        "id": 18,
+        "precio": 10300,
+        "modelo": "Golden State Warriors - Lebron",
+        "talle": ["s", "m", "l", "xl"],
+        "cantidad": [0, 2, 1, 1]
+    },
+
+    {
+        "id": 19,
+        "precio": 12300,
+        "modelo": "Houston Rockets - Lebron",
+        "talle": ["s", "m", "l", "xl"],
+        "cantidad": [0, 2, 1, 1]
+    },
+    {
+        "id": 20,
+        "precio": 12200,
+        "modelo": "LA Clippers - Lebron",
+        "talle": ["s", "m", "l", "xl"],
+        "cantidad": [0, 2, 1, 1]
+    },
+
+    {
+        "id": 21,
+        "precio": 11300,
+        "modelo": "Los Angeles Lakers - Lebron",
+        "talle": ["s", "m", "l", "xl"],
+        "cantidad": [0, 2, 1, 1]
+    },
+    {
+        "id": 22,
+        "precio": 18300,
+        "modelo": "Memphis Grizzlies - Lebron",
+        "talle": ["s", "m", "l", "xl"],
+        "cantidad": [0, 2, 1, 1]
+    },
+
+    {
+        "id": 23,
+        "precio": 16300,
+        "modelo": "Minnesota Timberwolves - Lebron",
+        "talle": ["s", "m", "l", "xl"],
+        "cantidad": [0, 2, 1, 1]
+    },
+    {
+        "id": 24,
+        "precio": 15300,
+        "modelo": "New Orleans Pelicans - Lebron",
+        "talle": ["s", "m", "l", "xl"],
+        "cantidad": [0, 2, 1, 1]
+    },
+    {
+        "id": 25,
+        "precio": 12300,
+        "modelo": "Oklahoma City Thunder - Lebron",
+        "talle": ["s", "m", "l", "xl"],
+        "cantidad": [0, 2, 1, 1]
+    },
+    {
+        "id": 26,
+        "precio": 13100,
+        "modelo": "Phoenix Suns - Lebron",
+        "talle": ["s", "m", "l", "xl"],
+        "cantidad": [0, 2, 1, 1]
+    },
+    {
+        "id": 27,
+        "precio": 11300,
+        "modelo": "Portland Trail Blazers - Lebron",
+        "talle": ["s", "m", "l", "xl"],
+        "cantidad": [0, 2, 1, 1]
+    },
+    {
+        "id": 28,
+        "precio": 15200,
+        "modelo": "Sacramento Kings",
+        "talle": ["s", "m", "l", "xl"],
+        "cantidad": [0, 2, 1, 1]
+    },
+    {
+        "id": 29,
+        "precio": 12000,
+        "modelo": "San Antonio Spurs ",
+        "talle": ["s", "m", "l", "xl"],
+        "cantidad": [0, 2, 1, 1]
+    },
+    {
+        "id": 30,
+        "precio": 12000,
+        "modelo": "Utah Jazz",
+        "talle": ["s", "m", "l", "xl"],
+        "cantidad": [0, 2, 1, 1]
+    }
+]

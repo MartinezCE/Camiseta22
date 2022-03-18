@@ -12,7 +12,10 @@ const comprar = (valor) => {
 }
 
 let boton1 = document.querySelector("#btn1");
-boton1.addEventListener("click", respuestaClick1 = () => {
+boton1.addEventListener("click", respuestaClick1)
+
+
+function respuestaClick1() {
 
 
     if (camisetas[0].cantidad > 0) {
@@ -34,12 +37,14 @@ boton1.addEventListener("click", respuestaClick1 = () => {
         pintarSinStockConID(camisetas[0].id);
     }
 
-})
+}
 
 
 
 let boton2 = document.getElementById("btn2");
-boton2.addEventListener("click", respuestaClick2 = () => {
+boton2.addEventListener("click", respuestaClick2)
+
+function respuestaClick2() {
     if (camisetas[1].cantidad > 0) {
         comprar(camisetas[1].precio);
         camisetas[1].sacarDelStock(camisetas[1].id, camisetas[1].precio);
@@ -59,11 +64,13 @@ boton2.addEventListener("click", respuestaClick2 = () => {
         })
         pintarSinStockConID(camisetas[1].id);
     }
-})
+}
 
 
 let boton3 = document.getElementById("btn3");
-boton3.addEventListener("click", respuestaClick3 = () => {
+boton3.addEventListener("click", respuestaClick3)
+
+function respuestaClick3() {
     if (camisetas[2].cantidad > 0) {
         comprar(camisetas[2].precio);
         camisetas[2].sacarDelStock(camisetas[2].id, camisetas[2].precio);
@@ -80,4 +87,4 @@ boton3.addEventListener("click", respuestaClick3 = () => {
         })
         pintarSinStockConID(camisetas[2].id);
     }
-})
+}
