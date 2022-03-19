@@ -1,5 +1,4 @@
-// BOTON DARK / LIGTH
-// INICIO
+///////////////////////////////////////// BOTON DARK / LIGTH --INICIO ////////////////////////////////////////////////
 
 const colorFondoOscuro = document.querySelector("#dark");
 const body = document.querySelector("body");
@@ -27,5 +26,4 @@ function setSorage(value) {
     localStorage.setItem('darkMode', value)
 }
 
-// BOTON DARK / LIGTH
-// FIN
+///////////////////////////////////// BOTON DARK / LIGTH --FIN ////////////////////////////////////////////////

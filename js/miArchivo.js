@@ -1,25 +1,8 @@
-import { pintarSinStock, pintarEnStock } from "./dom.js"
 import { getStorage } from "./storage.js"
-import { Producto } from "./Producto.js"
 
-
-getStorage()
-pintarSinStock()
-
-
-
-export const camisetas = [];
-camisetas.push(new Producto(1, 100, 'Racing Titular 2022', 'm', 3));
-camisetas.push(new Producto(2, 500, 'Racing Homenaje 2001', 's', 3));
-camisetas.push(new Producto(3, 300, "Seleccion Argentina", 'm', 3));
-
-pintarEnStock(camisetas)
-
-
-
-
-
-// se dispara cuando el html esta cargado
+document.addEventListener("DOMContentLoaded", () => {
+    getStorage();
+})
 
 
 

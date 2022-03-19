@@ -5,6 +5,15 @@
     font-family: 'Open Sans', sans-serif importan!;
 }
 
+.d-flex {
+    display: flex!important;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+}
+
 .navbar {
     position: fixed;
     top: 0;

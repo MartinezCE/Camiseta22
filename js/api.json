@@ -2,6 +2,7 @@
         "id": 1,
         "precio": 15000,
         "modelo": "Atlanta Hawks - Young",
+        "img": "https://images.footballfanatics.com/atlanta-hawks/atlanta-hawks-nike-association-edition-swingman-jersey-white-trae-young-youth_ss4_p-12052826+u-m7hzf7twg4uzi4xahzd2+v-cc2549c279264c2bb3cc0217be261be6.jpg?_hv=1&w=900",
         "talle": ["s", "m", "l", "xl"],
         "cantidad": [2, 4, 2, 1]
     },
@@ -9,6 +10,7 @@
         "id": 2,
         "precio": 10000,
         "modelo": "Boston Celtics - Tatum",
+        "img": "https://images.footballfanatics.com/boston-celtics/boston-celtics-nike-icon-swingman-jersey-jayson-tatum-mens_ss4_p-11904831+u-rls9h59nafc4cayapi5+v-c1f71d1980544afb84393cfc87107d9e.jpg?_hv=1&w=900",
         "talle": ["s", "m", "l", "xl"],
         "cantidad": [0, 2, 1, 1]
     },
@@ -16,6 +18,7 @@
         "id": 3,
         "precio": 10022,
         "modelo": "Brooklyn Nets - Irving",
+        "img": "https://images.footballfanatics.com/brooklyn-nets/brooklyn-nets-nike-statement-swingman-jersey-kyrie-irving-mens_ss4_p-12020160+u-19z1fwzx3wpe0b45ul4b+v-3db8df754199485ea4c37f28b54e4121.jpg?_hv=1&w=900",
         "talle": ["s", "m", "l", "xl"],
         "cantidad": [0, 2, 0, 2]
 
@@ -23,105 +26,120 @@
     {
         "id": 4,
         "precio": 10300,
-        "modelo": "Charlotte Hornets - Lebron",
+        "modelo": "Charlotte Hornets - Ball ",
+        "img": "https://images.footballfanatics.com/charlotte-hornets/charlotte-hornets-jordan-icon-edition-swingman-jersey-teal-lamelo-ball-mens_ss4_p-12049026+u-18dgf6m0yl946rp7a4cb+v-fb14670520044607830a5943031ee340.jpg?_hv=1&w=900",
         "talle": ["s", "m", "l", "xl"],
         "cantidad": [0, 2, 1, 1]
     },
     {
         "id": 5,
         "precio": 10300,
-        "modelo": "Chicago Bulls - Lebron",
+        "modelo": "Chicago Bulls - Lavine ",
+        "img": "https://images.footballfanatics.com/chicago-bulls/chicago-bulls-nike-icon-edition-swingman-jersey-red-zach-lavine-mens_ss4_p-11899886+u-15deup7lqpyz7zrxtgwv+v-e22db1ef01634b98a87b09c91f38fb9c.jpg?_hv=1&w=900",
         "talle": ["s", "m", "l", "xl"],
         "cantidad": [0, 2, 1, 1]
     },
     {
         "id": 6,
         "precio": 10300,
-        "modelo": "Cleveland Cavaliers - Lebron",
+        "modelo": "Cleveland Cavaliers - Allen ",
+        "img": "https://images.footballfanatics.com/cleveland-cavaliers/cleveland-cavaliers-nike-icon-swingman-jersey-maroon-jarrett-allen-mens_ss4_p-12058054+u-2o6vm1m7phf2nqi1o72a+v-25b7202c8e114fc3a23497fa0303232a.jpg?_hv=1&w=900",
         "talle": ["s", "m", "l", "xl"],
         "cantidad": [0, 2, 1, 1]
     },
     {
         "id": 7,
         "precio": 10300,
-        "modelo": "Detroit Pistons - Lebron",
+        "modelo": "Detroit Pistons - Cimmomgham",
+        "img": "https://images.footballfanatics.com/detroit-pistons/detroit-pistons-nike-swingman-jersey-blue-cade-cunningham-youth-icon-edition_ss4_p-12083936+u-1fu4pdvh5eudtj9yj3b3+v-2c1c7996262c43a7b1da8f2b199d1072.jpg?_hv=1&w=900",
         "talle": ["s", "m", "l", "xl"],
         "cantidad": [0, 2, 1, 1]
     },
     {
         "id": 8,
         "precio": 14000,
-        "modelo": "Indiana Pacers - Lebron",
+        "modelo": "Indiana Pacers - Duarte",
+        "img": "https://images.footballfanatics.com/indiana-pacers/indiana-pacers-nike-icon-edition-swingman-jersey-navy-chris-duarte-mens_ss4_p-12083908+u-u2hgyvw44ceg206quwte+v-a61be808cbaa4b9db04d8d390a22f7a0.jpg?_hv=1&w=900",
         "talle": ["s", "m", "l", "xl"],
         "cantidad": [0, 2, 1, 1]
     },
     {
         "id": 9,
         "precio": 12000,
-        "modelo": "Miami Heat - Lebron",
+        "modelo": "Miami Heat - Adebayo",
+        "img": "https://images.footballfanatics.com/miami-heat/miami-heat-nike-icon-swingman-jersey-bam-adebayo-mens_ss4_p-11899451+u-1fuli8p9dc7vwwfvf7rs+v-879125124ffd4fa782c5cffa84d73a1c.jpg?_hv=1&w=900",
         "talle": ["s", "m", "l", "xl"],
         "cantidad": [0, 2, 1, 1]
     },
     {
         "id": 10,
         "precio": 11000,
-        "modelo": "Milwaukee Bucks - Lebron",
+        "modelo": "Milwaukee Bucks - Antetokounmpo",
+        "img": "https://images.footballfanatics.com/milwaukee-bucks/milwaukee-bucks-nike-city-edition-swingman-jersey-giannis-antetokounmpo-youth-2020_ss4_p-12052835+u-jwgt7fk5jdr98vpuhem1+v-94001c545cf448ff94aeac206d27f228.jpg?_hv=1&w=900",
         "talle": ["s", "m", "l", "xl"],
         "cantidad": [0, 2, 1, 1]
     },
     {
         "id": 11,
         "precio": 10000,
-        "modelo": "New York Knicks - Lebron",
+        "modelo": "New York Knicks - Walker",
+        "img": "https://images.footballfanatics.com/new-york-knicks/new-york-knicks-nike-classic-edition-swingman-jersey-white-kemba-walker-mens_ss4_p-12096182+u-o3bmw6qdwmaud9htyvsm+v-fbbfe69088da4b808e9ba6e45f303536.jpg?_hv=1&w=900",
         "talle": ["s", "m", "l", "xl"],
         "cantidad": [0, 2, 1, 1]
     },
     {
         "id": 12,
         "precio": 11300,
-        "modelo": "Orlando Magic - Lebron",
+        "modelo": "Orlando Magic - Wagner",
+        "img": "https://images.footballfanatics.com/orlando-magic/orlando-magic-nike-swingman-jersey-black-franz-wagner-mens-icon-edition_ss4_p-12083899+u-baza81zoeluzgk4wz28q+v-d08d4b92f2824d2e91a9c6dd2a67b4d3.jpg?_hv=1&w=900",
         "talle": ["s", "m", "l", "xl"],
         "cantidad": [0, 2, 1, 1]
     },
     {
         "id": 13,
         "precio": 12300,
-        "modelo": "Philadelphia 76ers - Lebron",
+        "modelo": "Philadelphia 76ers - Harden",
+        "img": "https://images.footballfanatics.com/philadelphia-76ers/philadelphia-76ers-nike-icon-edition-swingman-jersey-royal-james-harden-mens_ss4_p-13315423+u-sm6t3805xznb31lzslw8+v-7e02f37fd5fa4ad5b58355494c1029cb.jpg?_hv=1&w=900",
         "talle": ["s", "m", "l", "xl"],
         "cantidad": [0, 2, 1, 1]
     },
     {
         "id": 14,
         "precio": 14300,
-        "modelo": "Toronto Raptors - Lebron",
+        "modelo": "Toronto Raptors - Barnes",
+        "img": "https://images.footballfanatics.com/toronto-raptors/toronto-raptors-nike-city-edition-swingman-jersey-scottie-barnes-mens_ss4_p-13300322+u-qb6qzbgsaz1in5syszla+v-c25117a300d94098a6aa390be9b2b807.jpg?_hv=1&w=900",
         "talle": ["s", "m", "l", "xl"],
         "cantidad": [0, 2, 1, 1]
     },
     {
         "id": 15,
         "precio": 13300,
-        "modelo": "Washington Wizards - Lebron",
+        "modelo": "Washington Wizards - Kuzma",
+        "img": "https://images.footballfanatics.com/washington-wizards/washington-wizards-nike-icon-edition-swingman-jersey-red-kyle-kuzma-mens_ss4_p-13317177+u-70ixacxywhr3ov8m6jpc+v-ba877f89ac404d74bbabc8c639430719.jpg?_hv=1&w=900",
         "talle": ["s", "m", "l", "xl"],
         "cantidad": [0, 2, 1, 1]
     },
     {
         "id": 16,
         "precio": 11300,
-        "modelo": "Dallas Mavericks - Lebron",
+        "modelo": "Dallas Mavericks - Donćić",
+        "img": "https://images.footballfanatics.com/dallas-mavericks/dallas-mavericks-nike-city-edition-swingman-jersey-luka-doncic-youth_ss4_p-12099908+u-o5naeuavu7o2rj8w76ed+v-790d07946f9f42f89376e3d97151aa05.jpg?_hv=1&w=900",
         "talle": ["s", "m", "l", "xl"],
         "cantidad": [0, 2, 1, 1]
     },
     {
         "id": 17,
         "precio": 11300,
-        "modelo": "Denver Nuggets - Lebron",
+        "modelo": "Denver Nuggets - Jokic",
+        "img": "https://images.footballfanatics.com/denver-nuggets/denver-nuggets-nike-icon-edition-swingman-jersey-navy-nikola-jokic-youth_ss4_p-11978189+u-16vxubhcuob2inj3pz73+v-90731a79a02540dfa5580ebbfb894fe7.jpg?_hv=1&w=900",
         "talle": ["s", "m", "l", "xl"],
         "cantidad": [0, 2, 1, 1]
     },
     {
         "id": 18,
         "precio": 10300,
-        "modelo": "Golden State Warriors - Lebron",
+        "modelo": "Golden State Warriors - Curry",
+        "img": "https://images.footballfanatics.com/golden-state-warriors/golden-state-warriors-nike-icon-swingman-jersey-stephen-curry-mens_ss4_p-12004327+u-li70oq1ioic5gvc77chm+v-b5f8573bcc5246a6a93ca836a97a533b.jpg?_hv=1&w=900",
         "talle": ["s", "m", "l", "xl"],
         "cantidad": [0, 2, 1, 1]
     },
@@ -129,14 +147,16 @@
     {
         "id": 19,
         "precio": 12300,
-        "modelo": "Houston Rockets - Lebron",
+        "modelo": "Houston Rockets - Wood",
+        "img": "https://images.footballfanatics.com/houston-rockets/houston-rockets-nike-earned-edition-swingman-jersey-christian-wood-youth_ss4_p-12062598+u-nljkououquvoqzaaue5b+v-0d4a0ed885ac4f81888f07d9dd1cbbcd.jpg?_hv=1&w=900g",
         "talle": ["s", "m", "l", "xl"],
         "cantidad": [0, 2, 1, 1]
     },
     {
         "id": 20,
         "precio": 12200,
-        "modelo": "LA Clippers - Lebron",
+        "modelo": "LA Clippers - Leeonard",
+        "img": "https://images.footballfanatics.com/la-clippers/los-angeles-clippers-jordan-statement-swingman-jersey-kawhi-leonard-mens_ss4_p-12041564+u-1fv51jrbo4xspbeegjng+v-0274f064a7ae4a79a9e3ac61fb05e1fe.jpg?_hv=1&w=900",
         "talle": ["s", "m", "l", "xl"],
         "cantidad": [0, 2, 1, 1]
     },
@@ -144,14 +164,16 @@
     {
         "id": 21,
         "precio": 11300,
-        "modelo": "Los Angeles Lakers - Lebron",
+        "modelo": "Los Angeles Lakers - James",
+        "img": "https://images.footballfanatics.com/los-angeles-lakers/los-angeles-lakers-nike-association-edition-swingman-jersey-white-lebron-james-mens_ss4_p-11976637+u-vx1wvop1rdl0woetii0v+v-6415d63a8c524a6594c054c3399e8fbe.jpg?_hv=1&w=900",
         "talle": ["s", "m", "l", "xl"],
         "cantidad": [0, 2, 1, 1]
     },
     {
         "id": 22,
         "precio": 18300,
-        "modelo": "Memphis Grizzlies - Lebron",
+        "modelo": "Memphis Grizzlies - Morant",
+        "img": "https://images.footballfanatics.com/memphis-grizzlies/memphis-grizzlies-nike-association-swingman-jersey-ja-morant-youth_ss4_p-12002056+u-7ylbmzz74ftv1dxk3fpy+v-cc66d196b1e1412da0f52054347586d1.jpg?_hv=1&w=900",
         "talle": ["s", "m", "l", "xl"],
         "cantidad": [0, 2, 1, 1]
     },
@@ -159,56 +181,64 @@
     {
         "id": 23,
         "precio": 16300,
-        "modelo": "Minnesota Timberwolves - Lebron",
+        "modelo": "Minnesota Timberwolves - Edwards",
+        "img": "https://images.footballfanatics.com/minnesota-timberwolves/minnesota-timberwolves-nike-association-swingman-jersey-anthony-edwards-mens_ss4_p-12054070+u-z4omluhzwkf7oftcr7le+v-61304b1664d248148038f5680f29b9ab.jpg?_hv=1&w=900",
         "talle": ["s", "m", "l", "xl"],
         "cantidad": [0, 2, 1, 1]
     },
     {
         "id": 24,
         "precio": 15300,
-        "modelo": "New Orleans Pelicans - Lebron",
+        "modelo": "New Orleans Pelicans - Williamson",
+        "img": "https://images.footballfanatics.com/new-orleans-pelicans/new-orleans-pelicans-nike-icon-swingman-jersey-zion-williamson-mens_ss4_p-12004938+u-14cnvoq0gvwsu6scjb7v+v-04cfb89b0ae6424d90158d770d3f61cc.jpg?_hv=1&w=900",
         "talle": ["s", "m", "l", "xl"],
         "cantidad": [0, 2, 1, 1]
     },
     {
         "id": 25,
         "precio": 12300,
-        "modelo": "Oklahoma City Thunder - Lebron",
+        "modelo": "Oklahoma City Thunder - Bazley",
+        "img": "https://images.footballfanatics.com/oklahoma-city-thunder/oklahoma-city-thunder-nike-association-edition-swingman-jersey-white-darius-bazley-mens_ss4_p-13317171+u-mwgjim2eoglccch52p0n+v-a0b407d81f5e40798ed08c8154ac7e1b.jpg?_hv=1&w=900",
         "talle": ["s", "m", "l", "xl"],
         "cantidad": [0, 2, 1, 1]
     },
     {
         "id": 26,
         "precio": 13100,
-        "modelo": "Phoenix Suns - Lebron",
+        "modelo": "Phoenix Suns - Paul",
+        "img": "https://images.footballfanatics.com/phoenix-suns/phoenix-suns-nike-city-edition-swingman-jersey-chris-paul-youth_ss4_p-12052269+u-irzqj927blapz9s14oby+v-446cca8e4d794b978e63642f40dc6616.jpg?_hv=1&w=900",
         "talle": ["s", "m", "l", "xl"],
         "cantidad": [0, 2, 1, 1]
     },
     {
         "id": 27,
         "precio": 11300,
-        "modelo": "Portland Trail Blazers - Lebron",
+        "modelo": "Portland Trail Blazers - Lillard",
+        "img": "https://images.footballfanatics.com/portland-trail-blazers/portland-trail-blazers-nike-city-edition-swingman-jersey-damian-lillard-mens_ss4_p-13300251+u-uxox6gwtlsxjcou4d27x+v-9672acff5ec84ee4bd0f510a44ad9ee5.jpg?_hv=1&w=900",
         "talle": ["s", "m", "l", "xl"],
         "cantidad": [0, 2, 1, 1]
     },
     {
         "id": 28,
         "precio": 15200,
-        "modelo": "Sacramento Kings",
+        "modelo": "Sacramento Kings- Queta",
+        "img": "https://images.footballfanatics.com/sacramento-kings/sacramento-kings-nike-swingman-jersey-purple-neemias-queta-youth-icon-edition_ss4_p-12091856+u-jsd2ms24v53rirn77nxm+v-bf680a13df2b424a8a88290f38decb05.jpg?_hv=1&w=900",
         "talle": ["s", "m", "l", "xl"],
         "cantidad": [0, 2, 1, 1]
     },
     {
         "id": 29,
         "precio": 12000,
-        "modelo": "San Antonio Spurs ",
+        "modelo": "San Antonio Spurs - DeRozan",
+        "img": "https://images.footballfanatics.com/FFImage/thumb.aspx?i=/productimages/_3336000/altimages/ff_3336676-bd455a3f4e5a13d74e0falt1_full.jpg&w=900",
         "talle": ["s", "m", "l", "xl"],
         "cantidad": [0, 2, 1, 1]
     },
     {
         "id": 30,
         "precio": 12000,
-        "modelo": "Utah Jazz",
+        "modelo": "Utah Jazz - Mitchell",
+        "img": "https://images.footballfanatics.com/utah-jazz/utah-jazz-nike-association-swingman-jersey-donovan-mitchell-mens_ss4_p-11971033+u-zy1mxrd7wupyjqw7i985+v-a9febe55ed8e406e95ad3a3b493a3a71.jpg?_hv=1&w=900",
         "talle": ["s", "m", "l", "xl"],
         "cantidad": [0, 2, 1, 1]
     }

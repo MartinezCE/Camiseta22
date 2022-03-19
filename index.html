@@ -14,8 +14,8 @@
     <link rel="StyleSheet" href="style/style.css">
 </head>
 
-<body>
 
+<body>
     <header>
         <section>
             <nav class="navbar navbar-expand-lg navbar-dark bg-light">
@@ -31,7 +31,6 @@
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link active nav-tex" href="#Western">Western Conference</a>
-
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link active" href="#carrito">Carrito</a>
@@ -45,373 +44,85 @@
                                 <!-- Botón -->
                                 <label for="switch-label" id="dark" class="switch-button__label"></label>
                             </div>
-
                             <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Buscar">
                             <button class="btn btn-outline-success" type="submit">Buscar</button> -->
                         </form>
                     </div>
                 </div>
             </nav>
-
         </section>
     </header>
+    <section>
+        <main>
+            <br><br>
+            <h2 class="subtitulo " id="Eastern" style="margin-top: 1%;">Eastern Conference</h2>
+            <div class="baner eastern-titulo "> </div>
+            <section id="FutbolID">
+                <div class=" d-flex" id="items"></div>
 
-    <main>
-        <br><br>
-
-        <h2 class="subtitulo " id="Eastern" style="margin-top: 1%;">Eastern Conference</h2>
-        <div class="baner eastern-titulo "> </div>
-        <section id="FutbolID">
-
-
-            <div class="card" style="width: 18rem;">
-                <div id="" class="stock"></div>
+                <template id="template-card">
+        <div class="card" style="width: 18rem;">
+            <div id="" class="stock"></div>
                 <img data-src="./img/atlanta.png" class="card-img-top" alt="...">
-                <div class="card-body ">
-                    <h5 class="card-title">Atlanta Hawks</h5>
-                    <p class="card-text">Atlanta Hawks Nike Association Edition Swingman Jersey - White - Trae Young - Mens.</p>
-                    <a id="btn1" class="btn btn-primary ">Agregar</a>
-                    <a id="" class="btn btn-primary">Detalles</a>
-                </div>
+                  <div class="card-body ">
+                     <h5 class="card-title"></h5>
+                    <p class="card-text"></p><br>
+                    <select class="form-select card-select form-select-sm" aria-label=".form-select-sm example">
+                    <option value="1">S</option>
+                    <option value="2">M</option>
+                    <option value="6">L</option>
+                    <option value="3">XL</option></select>
+                    <div>
+                    <a  class="btn btnAgregar btn-primary ">Agregar</a>
+                    <a  class="btn btnDetalles btn-primary">Detalles</a></div>
+                 </div>
             </div>
+         </div>
+   </template>
+            </section>
 
 
-            <div class="card" style="width: 18rem;">
-                <div id="" class="stock"></div>
-                <img data-src="./img/boston.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title ">Racing Arquero <br> 2021</h5>
-                    <p class=" card-text ">Boston Celtics Nike Icon Swingman Jersey - Jayson Tatum - Mens.</p>
-                    <a id="btn2" class="btn btn-primary ">Agregar</a>
-                    <a id="" class="btn btn-primary">Detalles</a>
-                </div>
+            <h2 class="subtitulo  " id="Western">Western Conference</h2>
+            <div class="baner western-titulo "> </div>
+            <section id="BasquetID" class="Basquet ">
+                <div class=" d-flex" id="items2"></div>
+
+                <template id="template-card2">
+        <div class="card" style="width: 18rem;">
+            <div id="" class="stock"></div>
+                     <img data-src="./img/atlanta.png" class="card-img-top" alt="...">
+                     <div class="card-body ">
+                    <h5 class="card-title"></h5>
+                    <p class="card-text"></p><br>
+                    <select class="form-select card-select form-select-sm" aria-label=".form-select-sm example">
+                        <option value="1">S</option>
+                        <option value="2">M</option>
+                        <option value="6">L</option>
+                        <option value="3">XL</option></select>
+                      <a  class="btn btnAgregar btn-primary ">Agregar</a>
+                   <a  class="btn btnDetalles btn-primary">Detalles</a>
             </div>
+        </div>
+     </div>
+    </template>
+            </section>
+        </main>
+        <footer class="footer "> <br><br><br><br>Camiseta 22<br><br><br><br></footer>
 
 
 
-            <div class="card " style="width: 18rem; ">
-                <div id="" class="stock "></div>
-                <img data-src="./img/brooklyn.png " class="card-img-top " alt="... ">
-                <div class="card-body ">
-                    <h5 class="card-title ">Seleccion Argentina Titular 2022</h5>
-                    <p class="card-text ">Charlotte Hornets Jordan Brand Icon Edition Swingman Jersey - Teal - LaMelo Ball - Mens.</p>
-                    <a id="btn3" class="btn btn-primary ">Agregar</a>
-                    <a id="" class="btn btn-primary">Detalles</a>
-                </div>
-            </div>
-
-
-            <div class="card " style="width: 18rem; ">
-                <div id=" " class="stock "></div>
-                <img data-src="./img/charlotte.png " class="card-img-top " alt="... ">
-                <div class="card-body ">
-                    <h5 class="card-title ">Seleccion Argentina Alternativa 2018</h5>
-                    <p class="card-text ">Chicago Bulls Michael Jordan 1997 Alternate Authentic Jersey By Mitchell & Ness - Black - Mens.</p>
-                    <a class="btn btn-primary ">Agregar</a>
-                    <a id="" class="btn btn-primary">Detalles</a>
-                </div>
-            </div>
-
-            <div class="card " style="width: 18rem; ">
-                <div id="" class="stock "></div>
-                <img data-src="./img/chicago.png " class="card-img-top " alt="... ">
-                <div class="card-body ">
-                    <h5 class="card-title ">Seleccion Argentina Alternativa 2019</h5>
-                    <p class="card-text ">Cleveland Cavaliers Nike Statement Swingman Jersey - Black - Jarrett Allen - Youth.</p>
-                    <a class="btn btn-primary ">Agregar</a>
-                    <a id="" class="btn btn-primary">Detalles</a>
-                </div>
-            </div>
-
-            <div class="card " style="width: 18rem; ">
-                <div id="" class="stock "></div>
-                <img data-src="./img/clevelandpng.png " class="card-img-top " alt="... ">
-                <div class="card-body ">
-                    <h5 class="card-title ">Seleccion Argentina Alternativa 2019</h5>
-                    <p class="card-text ">Cleveland Cavaliers Nike Statement Swingman Jersey - Black - Jarrett Allen - Youth.</p>
-                    <a class="btn btn-primary ">Agregar</a>
-                    <a id="" class="btn btn-primary">Detalles</a>
-                </div>
-            </div>
-            <div class="card " style="width: 18rem; ">
-                <div id="" class="stock "></div>
-                <img data-src="./img/detroit.png" class="card-img-top " alt="... ">
-                <div class="card-body ">
-                    <h5 class="card-title ">Seleccion Argentina Alternativa 2019</h5>
-                    <p class="card-text ">Cleveland Cavaliers Nike Statement Swingman Jersey - Black - Jarrett Allen - Youth.</p>
-                    <a class="btn btn-primary ">Agregar</a>
-                    <a id="" class="btn btn-primary">Detalles</a>
-                </div>
-            </div>
-            <div class="card " style="width: 18rem; ">
-                <div id="" class="stock "></div>
-                <img data-src="./img/indiana.png " class="card-img-top " alt="... ">
-                <div class="card-body ">
-                    <h5 class="card-title ">Seleccion Argentina Alternativa 2019</h5>
-                    <p class="card-text ">Cleveland Cavaliers Nike Statement Swingman Jersey - Black - Jarrett Allen - Youth.</p>
-                    <a class="btn btn-primary ">Agregar</a>
-                    <a id="" class="btn btn-primary">Detalles</a>
-                </div>
-            </div>
-            <div class="card " style="width: 18rem; ">
-                <div id="" class="stock "></div>
-                <img data-src="./img/miami.png " class="card-img-top " alt="... ">
-                <div class="card-body ">
-                    <h5 class="card-title ">Seleccion Argentina Alternativa 2019</h5>
-                    <p class="card-text ">Cleveland Cavaliers Nike Statement Swingman Jersey - Black - Jarrett Allen - Youth.</p>
-                    <a class="btn btn-primary ">Agregar</a>
-                    <a id="" class="btn btn-primary">Detalles</a>
-                </div>
-            </div>
-            <div class="card " style="width: 18rem; ">
-                <div id="" class="stock "></div>
-                <img data-src="./img/milwaukee.png " class="card-img-top " alt="... ">
-                <div class="card-body ">
-                    <h5 class="card-title ">Seleccion Argentina Alternativa 2019</h5>
-                    <p class="card-text ">Cleveland Cavaliers Nike Statement Swingman Jersey - Black - Jarrett Allen - Youth.</p>
-                    <a class="btn btn-primary ">Agregar</a>
-                    <a id="" class="btn btn-primary">Detalles</a>
-                </div>
-            </div>
-            <div class="card " style="width: 18rem; ">
-                <div id="" class="stock "></div>
-                <img data-src="./img/new-york.png " class="card-img-top " alt="... ">
-                <div class="card-body ">
-                    <h5 class="card-title ">Seleccion Argentina Alternativa 2019</h5>
-                    <p class="card-text ">Cleveland Cavaliers Nike Statement Swingman Jersey - Black - Jarrett Allen - Youth.</p>
-                    <a href=" " class="btn btn-primary ">Agregar</a>
-                    <a href="" id="" class="btn btn-primary">Detalles</a>
-                </div>
-            </div>
-            <div class="card " style="width: 18rem; ">
-                <div id="" class="stock "></div>
-                <img data-src="./img/orlando.png " class="card-img-top " alt="... ">
-                <div class="card-body ">
-                    <h5 class="card-title ">Seleccion Argentina Alternativa 2019</h5>
-                    <p class="card-text ">Cleveland Cavaliers Nike Statement Swingman Jersey - Black - Jarrett Allen - Youth.</p>
-                    <a class="btn btn-primary ">Agregar</a>
-                    <a id="" class="btn btn-primary">Detalles</a>
-                </div>
-            </div>
-            <div class="card " style="width: 18rem; ">
-                <div id="" class="stock "></div>
-                <img data-src="./img/philadelphia.png " class="card-img-top " alt="... ">
-                <div class="card-body ">
-                    <h5 class="card-title ">Seleccion Argentina Alternativa 2019</h5>
-                    <p class="card-text ">Cleveland Cavaliers Nike Statement Swingman Jersey - Black - Jarrett Allen - Youth.</p>
-                    <a class="btn btn-primary ">Agregar</a>
-                    <a id="" class="btn btn-primary">Detalles</a>
-                </div>
-            </div>
-            <div class="card " style="width: 18rem; ">
-                <div id="" class="stock "></div>
-                <img data-src="./img/toronto.png " class="card-img-top " alt="... ">
-                <div class="card-body ">
-                    <h5 class="card-title ">Seleccion Argentina Alternativa 2019</h5>
-                    <p class="card-text ">Cleveland Cavaliers Nike Statement Swingman Jersey - Black - Jarrett Allen - Youth.</p>
-                    <a class="btn btn-primary ">Agregar</a>
-                    <a id="" class="btn btn-primary">Detalles</a>
-                </div>
-            </div>
-
-            <div class="card" style="width: 18rem;">
-                <div id="" class="stock"></div>
-                <img data-src="./img/washington.png" class="card-img-top" alt="...">
-                <div class="card-body ">
-                    <h5 class="card-title">Atlanta Hawks</h5>
-                    <p class="card-text">Atlanta Hawks Nike Association Edition Swingman Jersey - White - Trae Young - Mens.</p>
-                    <a id="btn2" class="btn btn-primary">Agregar</a>
-                    <a id="" class="btn btn-primary">Detalles</a>
-                </div>
-            </div>
-        </section>
-
-
-        <!--                                                INICIO SECCION Western                                                   -->
-
-        <h2 class="subtitulo  " id="Western">Western Conference</h2>
-
-
-
-
-        <div class="baner western-titulo "> </div>
-        <section id="BasquetID" class="Basquet ">
-
-
-            <div class="card " style="width: 18rem; ">
-                <div id="" class="stock "></div>
-                <img data-src="./img/dallas.png " class="card-img-top " alt="... ">
-                <div class="card-body ">
-                    <h5 class="card-title ">Racing Alternativa <br> 2020</h5>
-                    <p class="card-text ">Detroit Pistons Nike Swingman Jersey - Blue - Cade Cunningham - Mens - Icon Edition.</p>
-                    <a class="btn btn-primary ">Agregar</a>
-                    <a id="" class="btn btn-primary">Detalles</a>
-                </div>
-            </div>
-
-
-
-
-
-            <div class="card " style="width: 18rem; ">
-                <div id="" class="stock "></div>
-                <img data-src="./img/denver.png " class="card-img-top " alt="... ">
-                <div class="card-body ">
-                    <h5 class="card-title ">Racing Alternativa <br> 95</h5>
-                    <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a class="btn btn-primary ">Agregar</a>
-                    <a id="" class="btn btn-primary">Detalles</a>
-                </div>
-            </div>
-
-            <div class="card " style="width: 18rem; ">
-                <div id="" class="stock "></div>
-                <img data-src="./img/golden.png " class="card-img-top " alt="... ">
-                <div class="card-body ">
-                    <h5 class="card-title ">Racing Titular <br> 2020</h5>
-                    <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href=" " class="btn btn-primary ">Agregar</a>
-                    <a href="" id="" class="btn btn-primary">Detalles</a>
-                </div>
-            </div>
-
-        </section>
-        <section id="NBAID" class="NBA ">
-            <div class="card " style="width: 18rem; ">
-                <div id=" " class="stock "></div>
-                <img data-src="./img/houston.png " class="card-img-top " alt="... ">
-                <div class="card-body ">
-                    <h5 class="card-title ">Chicago Bulls</h5>
-                    <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href=" " class="btn btn-primary ">Agregar</a>
-                    <a href="" id="" class="btn btn-primary">Detalles</a>
-                </div>
-            </div>
-
-            <div class="card " style="width: 18rem; ">
-                <div id="" class="stock "></div>
-                <img data-src="./img/la-clippers.png " class="card-img-top " alt="... ">
-                <div class="card-body ">
-                    <h5 class="card-title ">Angeles Lakers</h5>
-                    <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href=" " class="btn btn-primary ">Agregar</a>
-                    <a href="" id="" class="btn btn-primary">Detalles</a>
-                </div>
-            </div>
-
-            <div class="card " style="width: 18rem; ">
-                <div id=" " class="stock "></div>
-                <img data-src="./img/los-angeles.png " class="card-img-top " alt="... ">
-                <div class="card-body ">
-                    <h5 class="card-title ">San Antonio Spurs</h5>
-                    <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href=" " class="btn btn-primary ">Agregar</a>
-                    <a href="" id="" class="btn btn-primary">Detalles</a>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <div id="" class="stock "></div>
-                <img data-src="./img/memphis.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Racing Titular <br> 2022</h5>
-                    <p class="card-text">Memphis Grizzlies Nike City Edition Swingman Jersey - Ja Morant - Mens</p>
-                    <a href="" id="" class="btn btn-primary">Agregar</a>
-                    <a href="" id="" class="btn btn-primary">Detalles</a>
-                </div>
-            </div>
-
-            <div class="card " style="width: 18rem; ">
-                <div id=" " class="stock "></div>
-                <img data-src="./img/minnesota.png " class="card-img-top " alt="... ">
-                <div class="card-body ">
-                    <h5 class="card-title ">Angeles Lakers - Lebron</h5>
-                    <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href=" " class="btn btn-primary ">Agregar</a>
-                    <a href="" id="" class="btn btn-primary">Detalles</a>
-                </div>
-            </div>
-            <div class="card " style="width: 18rem; ">
-                <div id=" " class="stock "></div>
-                <img data-src="./img/new-orleans.png " class="card-img-top " alt="... ">
-                <div class="card-body ">
-                    <h5 class="card-title ">Seleccion Argentina Alternativa 2019</h5>
-                    <p class="card-text ">Cleveland Cavaliers Nike Statement Swingman Jersey - Black - Jarrett Allen - Youth.</p>
-                    <a href=" " class="btn btn-primary ">Agregar</a>
-                    <a href="" id="" class="btn btn-primary">Detalles</a>
-                </div>
-            </div>
-
-            <div class="card " style="width: 18rem; ">
-                <div id=" " class="stock "></div>
-                <img data-src="./img/oklahoma.png " class="card-img-top " alt="... ">
-                <div class="card-body ">
-                    <h5 class="card-title ">Seleccion Argentina Alternativa 2019</h5>
-                    <p class="card-text ">Cleveland Cavaliers Nike Statement Swingman Jersey - Black - Jarrett Allen - Youth.</p>
-                    <a href=" " class="btn btn-primary ">Agregar</a>
-                    <a href="" id="" class="btn btn-primary">Detalles</a>
-                </div>
-            </div>
-            <div class="card " style="width: 18rem; ">
-                <div id=" " class="stock "></div>
-                <img data-src="./img/phoenix.png " class="card-img-top " alt="... ">
-                <div class="card-body ">
-                    <h5 class="card-title ">Seleccion Argentina Alternativa 2019</h5>
-                    <p class="card-text ">Cleveland Cavaliers Nike Statement Swingman Jersey - Black - Jarrett Allen - Youth.</p>
-                    <a href=" " class="btn btn-primary ">Agregar</a>
-                    <a href="" id="" class="btn btn-primary">Detalles</a>
-                </div>
-            </div>
-            <div class="card " style="width: 18rem; ">
-                <div id=" " class="stock "></div>
-                <img data-src="./img/sacramento.png " class="card-img-top " alt="... ">
-                <div class="card-body ">
-                    <h5 class="card-title ">Seleccion Argentina Alternativa 2019</h5>
-                    <p class="card-text ">Cleveland Cavaliers Nike Statement Swingman Jersey - Black - Jarrett Allen - Youth.</p>
-                    <a href=" " class="btn btn-primary ">Agregar</a>
-                    <a href="" id="" class="btn btn-primary">Detalles</a>
-                </div>
-            </div>
-            <div class="card " style="width: 18rem; ">
-                <div id=" " class="stock "></div>
-                <img data-src="./img/san-antonio.png " class="card-img-top " alt="... ">
-                <div class="card-body ">
-                    <h5 class="card-title ">Seleccion Argentina Alternativa 2019</h5>
-                    <p class="card-text ">Cleveland Cavaliers Nike Statement Swingman Jersey - Black - Jarrett Allen - Youth.</p>
-                    <a href=" " class="btn btn-primary ">Agregar</a>
-                    <a href="" id="" class="btn btn-primary">Detalles</a>
-                </div>
-            </div>
-            <div class="card " style="width: 18rem; ">
-                <div id=" " class="stock "></div>
-                <img data-src="./img/utah.png " class="card-img-top " alt="... ">
-                <div class="card-body ">
-                    <h5 class="card-title ">Seleccion Argentina Alternativa 2019</h5>
-                    <p class="card-text ">Cleveland Cavaliers Nike Statement Swingman Jersey - Black - Jarrett Allen - Youth.</p>
-                    <a href=" " class="btn btn-primary ">Agregar</a>
-                    <a href="" id="" class="btn btn-primary">Detalles</a>
-                </div>
-            </div>
-
-        </section>
-        <section>
-            <div id="carrito"></div>
-        </section>
-
-    </main>
-    <footer class="footer "> <br><br><br><br>Camiseta 22<br><br><br><br></footer>
-    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p " crossorigin="anonymous "></script>
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="./js/sweetalert.js" type="module"></script>
-    <script src="js/Producto.js" type="module"></script>
-    <script src="js/storage.js" type="module"></script>
-    <script src="js/eventos.js" type="module"></script>
-    <script src="js/dom.js" type="module"></script>
-    <script src="js/miArchivo.js" type="module"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+        <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p " crossorigin="anonymous "></script>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="./js/sweetalert.js" type="module"></script>
+        <script src="js/storage.js" type="module"></script>
+        <script src="js/eventos.js" type="module"></script>
+        <script src="js/dom.js" type="module"></script>
+        <script src="js/miArchivo.js" type="module"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
 </body>
 
 </html>

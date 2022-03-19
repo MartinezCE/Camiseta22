@@ -1,7 +1,4 @@
-import { Toast } from "./sweetalert.js"
-import { pintarSinStockConID } from "./dom.js"
-import { Producto } from "./Producto.js"
-import { camisetas } from "./miArchivo.js"
+import { Toast } from './sweetalert.js'
 
 
 let pagarTotal = 0;
@@ -11,80 +8,54 @@ const comprar = (valor) => {
     console.log(pagarTotal)
 }
 
-let boton1 = document.querySelector("#btn1");
-boton1.addEventListener("click", respuestaClick1)
 
+const cards1 = document.getElementById('items')
+console.log(cards1)
+cards1.addEventListener("click", e => {
+    agregarAlCarrito(e)
+})
 
-function respuestaClick1() {
+const cards2 = document.getElementById('items2')
+console.log(cards2)
+cards2.addEventListener("click", e => {
+    agregarAlCarritoW(e)
+})
 
-
-    if (camisetas[0].cantidad > 0) {
-        comprar(camisetas[0].precio);
-        camisetas[0].sacarDelStock(camisetas[0].id, camisetas[0].precio);
-        camisetas[0].crearLista(camisetas[0].id, camisetas[0].modelo);
-
-
+const agregarAlCarrito = (e) => {
+    if (e.target.classList.contains('btnAgregar')) {
+        console.log("Presiona Agregar")
         Toast.fire({
             icon: 'success',
             title: 'Producto agregado al carrito'
         })
-    } else if (camisetas[0].cantidad == 0) {
-        Toast.fire({
-            icon: 'error',
-            title: 'NO HAY MAS STOCK'
-        })
-        console.log((camisetas[0].id))
-        pintarSinStockConID(camisetas[0].id);
+    } else if (e.target.classList.contains('btnDetalles')) {
+        console.log("Presiona DETALLES")
     }
-
+    //  else if(no hay stoxk){
+    //     Toast.fire({
+    //         icon: 'error',
+    //         title: 'NO HAY MAS STOCK'
+    //     })
+    // }
+    e.stopPropagation;
 }
 
 
-
-let boton2 = document.getElementById("btn2");
-boton2.addEventListener("click", respuestaClick2)
-
-function respuestaClick2() {
-    if (camisetas[1].cantidad > 0) {
-        comprar(camisetas[1].precio);
-        camisetas[1].sacarDelStock(camisetas[1].id, camisetas[1].precio);
-        camisetas[1].crearLista(camisetas[1].id, camisetas[1].modelo);
-
-
-        console.log(camisetas[1].cantidad)
-
+const agregarAlCarritoW = (e) => {
+    if (e.target.classList.contains('btnAgregar')) {
+        console.log("Presiona Agregar")
         Toast.fire({
             icon: 'success',
             title: 'Producto agregado al carrito'
         })
-    } else if (camisetas[1].cantidad == 0) {
-        Toast.fire({
-            icon: 'error',
-            title: 'NO HAY MAS STOCK'
-        })
-        pintarSinStockConID(camisetas[1].id);
+    } else if (e.target.classList.contains('btnDetalles')) {
+        console.log("Presiona DETALLES")
     }
-}
-
-
-let boton3 = document.getElementById("btn3");
-boton3.addEventListener("click", respuestaClick3)
-
-function respuestaClick3() {
-    if (camisetas[2].cantidad > 0) {
-        comprar(camisetas[2].precio);
-        camisetas[2].sacarDelStock(camisetas[2].id, camisetas[2].precio);
-        camisetas[2].crearLista(camisetas[2].id, camisetas[2].modelo);
-
-        Toast.fire({
-            icon: 'success',
-            title: 'Producto agregado al carrito'
-        })
-    } else {
-        Toast.fire({
-            icon: 'error',
-            title: 'NO HAY MAS STOCK'
-        })
-        pintarSinStockConID(camisetas[2].id);
-    }
+    //  else if(no hay stoxk){
+    //     Toast.fire({
+    //         icon: 'error',
+    //         title: 'NO HAY MAS STOCK'
+    //     })
+    // }
+    e.stopPropagation;
 }
