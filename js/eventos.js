@@ -28,8 +28,10 @@ slideOnOff.addEventListener("click", (e) => {
 /////////////////////////////////////////////////// BOTON AGREGAR -- INICIO /////////////////////////////////////////////////////////////////////////////////////////
 const items3 = document.getElementById("items3");
 const fragment = document.createDocumentFragment();
-const templeFooter = document.getElementById("template-footer").content;
+const footer = document.getElementById("footer");
+const templateFooter = document.getElementById("template-footer").content;
 const templateCarrito = document.getElementById("template-carrito").content;
+
 let carrito = {};
 const cards1 = document.getElementById("items");
 cards1.addEventListener("click", (e) => {
@@ -80,7 +82,6 @@ const agregarAlCarritoW = (e) => {
 };
 
 const setCarrito = (objeto) => {
-  console.log(objeto.modelo);
   const producto = {
     id: objeto.querySelector(".btnAgregar").dataset.id,
     modelo: objeto.querySelector(".card-title").textContent,
@@ -98,10 +99,6 @@ const setCarrito = (objeto) => {
 const pintarCarrito = () => {
   items3.innerHTML = "";
   Object.values(carrito).forEach((producto) => {
-    console.log(producto.modelo);
-    console.log(producto.cantidad);
-    console.log(producto.id);
-    console.log(producto.precio);
     templateCarrito.querySelector("th").textContent = producto.id;
     templateCarrito.querySelectorAll("td")[0].textContent = producto.modelo;
     templateCarrito.querySelectorAll("td")[1].textContent = producto.cantidad;
@@ -118,30 +115,45 @@ const pintarCarrito = () => {
 };
 
 const pintarFooter = () => {
-  footer.innerHTML = `
-    <th scope="row" colspan="5"></th>`;
+  footer.innerHTML = ``;
+  if (Object.keys(carrito).length === 0) {
+    footer.innerHTML = `
+    <th scope="row" colspan="5">Carrito vacio</th>`;
+    return;
+  }
+
+  const nCantidad = Object.values(carrito).reduce(
+    (acc, { cantidad }) => acc + cantidad,
+    0
+  );
+  const nPrecio = Object.values(carrito).reduce(
+    (acc, { cantidad, precio }) => acc + cantidad * precio,
+    0
+  );
+  templateFooter.querySelectorAll("td")[0].textContent = nCantidad;
+  templateFooter.querySelector("span").textContent = nPrecio;
+  const clone = templateFooter.cloneNode(true);
+  fragment.appendChild(clone);
+  footer.appendChild(fragment);
+  const boton = document.querySelector("#vaciar-carrito");
+  boton.addEventListener("click", () => {
+    Swal.fire({
+      title: "El carrito se vacio con exito, vuelva a elegir los productos",
+      width: 600,
+      padding: "3em",
+      color: "#716add",
+      background: "#fff url()",
+      backdrop: `
+        rgba(0,0,123,0.4)
+        url("./img/basquet.gif")
+        left top
+        no-repeat
+      `,
+    });
+
+    carrito = {};
+    pintarCarrito();
+  });
 };
-
-const nCantidad = Object.values(carrito).reduce(
-  (acc, { cantidad }) => acc + cantidad,
-  0
-);
-const nPrecio = Object.values(carrito).reduce(
-  (acc, { cantidad, precio }) => acc + cantidad * precio,
-  0
-);
-
-templateFooter.querySelectorAll("td")[0].textContent = nCantidad;
-templateFooter.querySelector("span").textContent = nPrecio;
-
-const clone = templateFooter.cloneNode(true);
-fragment.appendChild(clone);
-
-footer.appendChild(fragment);
-const boton = document.querySelector("#vaciar-carrito");
-boton.addEventListener("click", () => {
-  carrito = {};
-  pintarCarrito();
-});
 
 /////////////////////////////////////////////////// BOTON AGREGAR -- FIN /////////////////////////////////////////////////////////////////////////////////////////
