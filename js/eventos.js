@@ -31,8 +31,8 @@ const fragment = document.createDocumentFragment();
 const footer = document.getElementById("footer");
 const templateFooter = document.getElementById("template-footer").content;
 const templateCarrito = document.getElementById("template-carrito").content;
-
 let carrito = {};
+
 const cards1 = document.getElementById("items");
 cards1.addEventListener("click", (e) => {
   agregarAlCarrito(e);
@@ -41,6 +41,10 @@ cards1.addEventListener("click", (e) => {
 const cards2 = document.getElementById("items2");
 cards2.addEventListener("click", (e) => {
   agregarAlCarritoW(e);
+});
+
+items3.addEventListener("click", (e) => {
+  btnSumarProducto(e);
 });
 
 const agregarAlCarrito = (e) => {
@@ -69,6 +73,7 @@ const agregarAlCarritoW = (e) => {
       icon: "success",
       title: "Producto agregado al carrito",
     });
+    cambiarTitulo();
   } else if (e.target.classList.contains("btnDetalles")) {
     console.log("Presiona DETALLES");
   }
@@ -121,7 +126,6 @@ const pintarFooter = () => {
     <th scope="row" colspan="5">Carrito vacio</th>`;
     return;
   }
-
   const nCantidad = Object.values(carrito).reduce(
     (acc, { cantidad }) => acc + cantidad,
     0
@@ -156,4 +160,43 @@ const pintarFooter = () => {
   });
 };
 
+const btnSumarProducto = (e) => {
+  if (e.target.classList.contains("btn-info")) {
+    console.log(carrito[e.target.dataset.id]);
+    const producto = carrito[e.target.dataset.id];
+    producto.cantidad++;
+    carrito[e.target.dataset.id] = { ...producto };
+    pintarCarrito();
+  }
+  if (e.target.classList.contains("btn-danger")) {
+    const producto = carrito[e.target.dataset.id];
+    producto.cantidad--;
+    if (producto.cantidad === 0) {
+      delete carrito[e.target.dataset.id];
+    }
+    pintarCarrito();
+  }
+  e.stopPropagation();
+};
+
+// const btnRestarProducto = (e) => {
+//   if (e.target.classList.contains("btn-danger")) {
+//     const producto = carrito([e.target.id]);
+//     producto.cantidad--;
+//     carrito[e.target.dataset.id] = { ...producto };
+//     pintarCarrito();
+//   }
+// };
+
 /////////////////////////////////////////////////// BOTON AGREGAR -- FIN /////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////  Contador de carrito en el titulo - INICIO /////////////////////////////////////////////////////////////////////////////
+
+// let titulo = document.title;
+// let total = templateFooter.querySelectorAll("td")[0].textContent;
+
+// const cambiarTitulo = () => {
+//   let nuevoTitulo = `(${total}) ${titulo}`;
+//   document.title = nuevoTitulo;
+//   console.log(total);
+// };
+//////////////////////////////////////////////////  Contador de carrito en el titulo - FIN /////////////////////////////////////////////////////////////////////////////
