@@ -31,7 +31,7 @@ const fragment = document.createDocumentFragment();
 const footer = document.getElementById("footer");
 const templateFooter = document.getElementById("template-footer").content;
 const templateCarrito = document.getElementById("template-carrito").content;
-let carrito = {};
+export let carrito = {};
 
 const cards1 = document.getElementById("items");
 cards1.addEventListener("click", (e) => {
@@ -101,7 +101,7 @@ const setCarrito = (objeto) => {
   pintarCarrito();
 };
 
-const pintarCarrito = () => {
+export const pintarCarrito = () => {
   items3.innerHTML = "";
   Object.values(carrito).forEach((producto) => {
     templateCarrito.querySelector("th").textContent = producto.id;
@@ -117,6 +117,8 @@ const pintarCarrito = () => {
   });
   items3.appendChild(fragment);
   pintarFooter();
+  localStorage.setItem("carrito", JSON.stringify(carrito));
+  console.log(JSON.stringify("carrito"));
 };
 
 const pintarFooter = () => {
@@ -190,13 +192,12 @@ const btnSumarProducto = (e) => {
 
 /////////////////////////////////////////////////// BOTON AGREGAR -- FIN /////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////  Contador de carrito en el titulo - INICIO /////////////////////////////////////////////////////////////////////////////
+let titulo = document.title;
+let total = localStorage.getItem();
 
-// let titulo = document.title;
-// let total = templateFooter.querySelectorAll("td")[0].textContent;
-
-// const cambiarTitulo = () => {
-//   let nuevoTitulo = `(${total}) ${titulo}`;
-//   document.title = nuevoTitulo;
-//   console.log(total);
-// };
+const cambiarTitulo = () => {
+  let nuevoTitulo = `(${total}) ${titulo}`;
+  document.title = nuevoTitulo;
+  console.log(total);
+};
 //////////////////////////////////////////////////  Contador de carrito en el titulo - FIN /////////////////////////////////////////////////////////////////////////////
