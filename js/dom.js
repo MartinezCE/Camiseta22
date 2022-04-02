@@ -1,4 +1,3 @@
-import { carrito, pintarCarrito } from "./eventos.js";
 //////////////////////////////////////////// PINTAR HTML ////////////////////////////////////////////////////
 const items = document.getElementById("items");
 const items2 = document.getElementById("items2");
@@ -7,13 +6,6 @@ const templateCard2 = document.getElementById("template-card2").content;
 const fragment = document.createDocumentFragment();
 document.addEventListener("DOMContentLoaded", () => {
   fetchData();
-  if (localStorage.getItem("carrito")) {
-    let carrito = JSON.parse(localStorage.getItem("carrito"));
-    pintarCarrito();
-  }
-  localStorage.getItem("cantidad")
-    ? (cantidad = JSON.parse(localStorage.getItem("cantidad")))
-    : falso;
 });
 
 const fetchData = async () => {

@@ -31,7 +31,17 @@ const fragment = document.createDocumentFragment();
 const footer = document.getElementById("footer");
 const templateFooter = document.getElementById("template-footer").content;
 const templateCarrito = document.getElementById("template-carrito").content;
-export let carrito = {};
+let carrito = {};
+
+document.addEventListener("DOMContentLoaded", () => {
+  if (localStorage.getItem("carrito")) {
+    carrito = JSON.parse(localStorage.getItem("carrito"));
+    pintarCarrito();
+  }
+  localStorage.getItem("cantidad")
+    ? (cantidad = JSON.parse(localStorage.getItem("cantidad")))
+    : false;
+});
 
 const cards1 = document.getElementById("items");
 cards1.addEventListener("click", (e) => {
@@ -101,7 +111,7 @@ const setCarrito = (objeto) => {
   pintarCarrito();
 };
 
-export const pintarCarrito = () => {
+const pintarCarrito = () => {
   items3.innerHTML = "";
   Object.values(carrito).forEach((producto) => {
     templateCarrito.querySelector("th").textContent = producto.id;
@@ -181,23 +191,14 @@ const btnSumarProducto = (e) => {
   e.stopPropagation();
 };
 
-// const btnRestarProducto = (e) => {
-//   if (e.target.classList.contains("btn-danger")) {
-//     const producto = carrito([e.target.id]);
-//     producto.cantidad--;
-//     carrito[e.target.dataset.id] = { ...producto };
-//     pintarCarrito();
-//   }
-// };
-
 /////////////////////////////////////////////////// BOTON AGREGAR -- FIN /////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////  Contador de carrito en el titulo - INICIO /////////////////////////////////////////////////////////////////////////////
 let titulo = document.title;
-let total = localStorage.getItem();
-
-const cambiarTitulo = () => {
-  let nuevoTitulo = `(${total}) ${titulo}`;
-  document.title = nuevoTitulo;
-  console.log(total);
-};
+let total = JSON.parse(localStorage.getItem("carrito"));
+console.log(total);
+// const cambiarTitulo = () => {
+//   let nuevoTitulo = `(${total}) ${titulo}`;
+//   document.title = nuevoTitulo;
+//   console.log(total);
+// };
 //////////////////////////////////////////////////  Contador de carrito en el titulo - FIN /////////////////////////////////////////////////////////////////////////////
