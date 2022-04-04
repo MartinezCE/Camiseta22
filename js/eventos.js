@@ -55,21 +55,18 @@ cards2.addEventListener("click", (e) => {
 
 items3.addEventListener("click", (e) => {
   btnSumarProducto(e);
-  cambiarTitulo();
 });
 
 const finaliza = document.getElementById("finalizar-carrito");
 finaliza.addEventListener("click", () => {
   carrito = {};
   pintarCarrito();
-  cambiarTitulo();
   slidebar.classList.toggle("activoSlider");
 });
 
 const agregarAlCarrito = (e) => {
   if (e.target.classList.contains("btnAgregar")) {
     setCarrito(e.target.parentElement);
-    cambiarTitulo();
     Toast.fire({
       icon: "success",
       title: "Producto agregado al carrito",
@@ -93,7 +90,6 @@ const agregarAlCarritoW = (e) => {
       icon: "success",
       title: "Producto agregado al carrito",
     });
-    cambiarTitulo();
   } else if (e.target.classList.contains("btnDetalles")) {
     console.log("Presiona DETALLES");
   }
@@ -179,7 +175,6 @@ const pintarFooter = () => {
     carrito = {};
     pintarCarrito();
   });
-  cambiarTitulo();
 };
 
 const btnSumarProducto = (e) => {
@@ -203,20 +198,5 @@ const btnSumarProducto = (e) => {
 
 /////////////////////////////////////////////////// BOTON AGREGAR -- FIN /////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////  Contador de carrito en el titulo - INICIO /////////////////////////////////////////////////////////////////////////////
-let titulo = document.title;
-let nuevoTitulo = `🛒 ${titulo}`;
-const cambiarTitulo = () => {
-  let total = JSON.stringify(localStorage.getItem("carrito"));
-  console.log(total);
-  if (total != "{}" || totla != null) {
-    document.title = nuevoTitulo;
-    console.log("cambia a nuevoTitulo");
-  } else if (total === null || total === "{}") {
-    nuevoTitulo = titulo;
-    console.log("cambia a titulo");
-  } else {
-    return false;
-  }
-};
-cambiarTitulo();
+
 //////////////////////////////////////////////////  Contador de carrito en el titulo - FIN /////////////////////////////////////////////////////////////////////////////
