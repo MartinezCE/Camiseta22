@@ -61,11 +61,13 @@ const finaliza = document.getElementById("finalizar-carrito");
 finaliza.addEventListener("click", () => {
   carrito = {};
   pintarCarrito();
+  cambiarTitulo2();
   slidebar.classList.toggle("activoSlider");
 });
 
 const agregarAlCarrito = (e) => {
   if (e.target.classList.contains("btnAgregar")) {
+    cambiarTitulo();
     setCarrito(e.target.parentElement);
     Toast.fire({
       icon: "success",
@@ -85,6 +87,7 @@ const agregarAlCarrito = (e) => {
 
 const agregarAlCarritoW = (e) => {
   if (e.target.classList.contains("btnAgregar")) {
+    cambiarTitulo();
     setCarrito(e.target.parentElement);
     Toast.fire({
       icon: "success",
@@ -118,6 +121,7 @@ const setCarrito = (objeto) => {
 };
 
 const pintarCarrito = () => {
+  cambiarTitulo();
   items3.innerHTML = "";
   Object.values(carrito).forEach((producto) => {
     templateCarrito.querySelector("th").textContent = producto.id;
@@ -174,12 +178,16 @@ const pintarFooter = () => {
 
     carrito = {};
     pintarCarrito();
+    cambiarTitulo2();
   });
 };
 
 const btnSumarProducto = (e) => {
   if (e.target.classList.contains("btn-info")) {
-    console.log(carrito[e.target.dataset.id]);
+    Toast.fire({
+      icon: "success",
+      title: "Producto agregado al carrito",
+    });
     const producto = carrito[e.target.dataset.id];
     producto.cantidad++;
     carrito[e.target.dataset.id] = { ...producto };
@@ -189,6 +197,8 @@ const btnSumarProducto = (e) => {
     const producto = carrito[e.target.dataset.id];
     producto.cantidad--;
     if (producto.cantidad === 0) {
+      console.log("ENTRO EN LA CONDICION", producto.cantidad);
+      cambiarTitulo2();
       delete carrito[e.target.dataset.id];
     }
     pintarCarrito();
@@ -198,5 +208,13 @@ const btnSumarProducto = (e) => {
 
 /////////////////////////////////////////////////// BOTON AGREGAR -- FIN /////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////  Contador de carrito en el titulo - INICIO /////////////////////////////////////////////////////////////////////////////
+//const titulo = document.getElementById("btnToggle");
 
+const cambiarTitulo = () => {
+  document.getElementById("btnToggle").textContent = `🛒 Carrito`;
+};
+
+const cambiarTitulo2 = () => {
+  document.getElementById("btnToggle").textContent = `Carrito`;
+};
 //////////////////////////////////////////////////  Contador de carrito en el titulo - FIN /////////////////////////////////////////////////////////////////////////////

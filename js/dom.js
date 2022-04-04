@@ -4,6 +4,7 @@ const items2 = document.getElementById("items2");
 const templateCard = document.getElementById("template-card").content;
 const templateCard2 = document.getElementById("template-card2").content;
 const fragment = document.createDocumentFragment();
+const fragment2 = document.createDocumentFragment();
 document.addEventListener("DOMContentLoaded", () => {
   fetchData();
 });
@@ -39,11 +40,11 @@ const pintarCard = (data) => {
         ".btnDetalles"
       ).dataset.id = `${producto?.id}-b`;
       const clone2 = templateCard2.cloneNode(true);
-      fragment.appendChild(clone2);
+      fragment2.appendChild(clone2);
     }
   });
   items.appendChild(fragment);
-  items2.appendChild(fragment);
+  items2.appendChild(fragment2);
 };
 
 //////////////////////////////////////////// PINTAR HTML - FIN ////////////////////////////////////////////////////
