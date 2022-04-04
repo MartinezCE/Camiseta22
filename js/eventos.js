@@ -59,6 +59,13 @@ items3.addEventListener("click", (e) => {
 
 const finaliza = document.getElementById("finalizar-carrito");
 finaliza.addEventListener("click", () => {
+  Swal.fire({
+    icon: "success",
+    title: "COMPRA REALIZADA CON EXITO",
+    text: "Gracias por confiar en nosotros!",
+    footer:
+      '<a href="mailto:<Camiseta22>info@gmail.com">Pronto nos pondremos en contacto, para mas infor escribinos ✉</a>',
+  });
   carrito = {};
   pintarCarrito();
   cambiarTitulo2();
@@ -76,12 +83,6 @@ const agregarAlCarrito = (e) => {
   } else if (e.target.classList.contains("btnDetalles")) {
     console.log("Presiona DETALLES");
   }
-  //  else if(no hay stoxk){
-  //     Toast.fire({
-  //         icon: 'error',
-  //         title: 'NO HAY MAS STOCK'
-  //     })
-  // }
   e.stopPropagation;
 };
 
@@ -96,12 +97,6 @@ const agregarAlCarritoW = (e) => {
   } else if (e.target.classList.contains("btnDetalles")) {
     console.log("Presiona DETALLES");
   }
-  //  else if(no hay stoxk){
-  //     Toast.fire({
-  //         icon: 'error',
-  //         title: 'NO HAY MAS STOCK'
-  //     })
-  // }
   e.stopPropagation;
 };
 
@@ -121,7 +116,6 @@ const setCarrito = (objeto) => {
 };
 
 const pintarCarrito = () => {
-  cambiarTitulo();
   items3.innerHTML = "";
   Object.values(carrito).forEach((producto) => {
     templateCarrito.querySelector("th").textContent = producto.id;

@@ -1,8 +1,3 @@
-import { getStorage } from "./storage.js";
-document.addEventListener("DOMContentLoaded", () => {
-  getStorage();
-});
-
 //////////////////////////////////////////////////////////////////////// API PARA CARGAR IMG /////////////////////////////////////////////////////////////////////////
 
 const img = document.querySelectorAll(".card-img-top"); // la referencia de lo que quiero observar
