@@ -55,11 +55,21 @@ cards2.addEventListener("click", (e) => {
 
 items3.addEventListener("click", (e) => {
   btnSumarProducto(e);
+  cambiarTitulo();
+});
+
+const finaliza = document.getElementById("finalizar-carrito");
+finaliza.addEventListener("click", () => {
+  carrito = {};
+  pintarCarrito();
+  cambiarTitulo();
+  slidebar.classList.toggle("activoSlider");
 });
 
 const agregarAlCarrito = (e) => {
   if (e.target.classList.contains("btnAgregar")) {
     setCarrito(e.target.parentElement);
+    cambiarTitulo();
     Toast.fire({
       icon: "success",
       title: "Producto agregado al carrito",
@@ -128,7 +138,6 @@ const pintarCarrito = () => {
   items3.appendChild(fragment);
   pintarFooter();
   localStorage.setItem("carrito", JSON.stringify(carrito));
-  console.log(JSON.stringify("carrito"));
 };
 
 const pintarFooter = () => {
@@ -170,6 +179,7 @@ const pintarFooter = () => {
     carrito = {};
     pintarCarrito();
   });
+  cambiarTitulo();
 };
 
 const btnSumarProducto = (e) => {
@@ -194,11 +204,19 @@ const btnSumarProducto = (e) => {
 /////////////////////////////////////////////////// BOTON AGREGAR -- FIN /////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////  Contador de carrito en el titulo - INICIO /////////////////////////////////////////////////////////////////////////////
 let titulo = document.title;
-let total = JSON.parse(localStorage.getItem("carrito"));
-console.log(total);
-// const cambiarTitulo = () => {
-//   let nuevoTitulo = `(${total}) ${titulo}`;
-//   document.title = nuevoTitulo;
-//   console.log(total);
-// };
+let nuevoTitulo = `🛒 ${titulo}`;
+const cambiarTitulo = () => {
+  let total = JSON.stringify(localStorage.getItem("carrito"));
+  console.log(total);
+  if (total != "{}" || totla != null) {
+    document.title = nuevoTitulo;
+    console.log("cambia a nuevoTitulo");
+  } else if (total === null || total === "{}") {
+    nuevoTitulo = titulo;
+    console.log("cambia a titulo");
+  } else {
+    return false;
+  }
+};
+cambiarTitulo();
 //////////////////////////////////////////////////  Contador de carrito en el titulo - FIN /////////////////////////////////////////////////////////////////////////////

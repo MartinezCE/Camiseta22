@@ -53,7 +53,6 @@ body {
 section {
   background-color: white;
 }
-
 .btn {
   background: rgb(41, 56, 96);
   background: -moz-linear-gradient(
@@ -328,6 +327,15 @@ hr {
 /*
       FIN      Boton para cambiar el color de la pagina
                                                         */
+
+.btnDetalles {
+  cursor: not-allowed;
+  background-color: rgb(229, 229, 229) !important;
+}
+
+.btnDetalles > * {
+  pointer-events: none;
+}
 
 @media screen and (min-width: 700px) {
   .slidebar {
